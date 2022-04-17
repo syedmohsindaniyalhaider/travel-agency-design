@@ -1,0 +1,177 @@
+@import "./styles/variable";
+@import "./styles/common";
+
+.header-section {
+  .header-bg {
+    background-image: url(/images/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .play-btn {
+    background-color: white;
+    border-radius: 100%;
+    padding: 15px 15px;
+    padding-left: 17px;
+  }
+}
+
+.tour-section {
+  .tour-images {
+    h4 {
+      margin-top: 20px;
+    }
+  }
+}
+
+.global-section {
+  .img {
+    background-color: $lightblue-color;
+  }
+  .overlay {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .content {
+    background: $overlay-color;
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
+
+  .overlay:hover .content {
+    bottom: 0;
+  }
+}
+
+.watch-section {
+  a {
+    color: $pink-color;
+  }
+  .image-bx-0 {
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: $yellow-color;
+    z-index: -100;
+  }
+  .watch-image {
+    .image-bx-1 {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      border-radius: 15px;
+      width: 90px;
+      height: 90px;
+      background-color: $pink-color;
+      z-index: -100;
+    }
+    .image-bx-2 {
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      border-radius: 15px;
+      width: 160px;
+      height: 160px;
+      background-color: $yellow-color;
+      z-index: -100;
+    }
+  }
+}
+
+.why-section {
+  .shadow {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border: none;
+  }
+  .card-circle {
+    position: absolute;
+    top: -40px;
+    left: 41%;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+}
+
+.testimonial-section {
+  .cs-border {
+    border-color: $pink-color !important;
+
+    &:hover {
+      color: $pink-color;
+    }
+  }
+
+  .say-border {
+    position: relative;
+    border-left: 15px solid $pink-color;
+    box-shadow: 2px 4px 60px 0px #292c7c1a;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 20px;
+  }
+
+  .border-left {
+    border: none;
+  }
+}
+
+.footer-section {
+  margin-top: 120px;
+  .footer-form {
+    input {
+      border: 1px solid $yellow-color;
+    }
+  }
+  .ul-list {
+    li {
+      border: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 576px) {
+  br {
+    display: block;
+  }
+  .global-section {
+    .img {
+      background-color: $lightblue-color;
+      height: 40vh;
+      width: 40vw;
+    }
+  }
+
+  .testimonial-section {
+    .say-border {
+      padding: 40px 60px;
+      position: absolute;
+      border-left: 15px solid $pink-color;
+      box-shadow: 2px 4px 60px 0px #292c7c1a;
+      bottom: -100px;
+      margin-left: 50px;
+    }
+
+    .border-left {
+      border-left: 1px solid silver;
+      padding: 10px;
+    }
+  }
+}
